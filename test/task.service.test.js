@@ -111,7 +111,7 @@ describe("Task Service", () => {
     );
 
     expect(result.taskId).toBe("task-1");
-    expect(result.done).toBe('xd');
+    expect(result.done).toBe(true);
   });
 
   test("debe eliminar una tarea", async () => {
