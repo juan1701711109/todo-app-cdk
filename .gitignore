@@ -10,6 +10,3 @@ node_modules
 # CDK asset staging directory
 .cdk.staging
 cdk.out
-
-# Keep one lockfile only (pnpm). Uncomment to ignore npm's lockfile:
-# package-lock.json

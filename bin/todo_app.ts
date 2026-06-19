@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib/core';
 import { TodoAppStack } from '../lib/todo_app-stack';
+import { PipelineStack } from '../lib/pipeline-stack';
 
 const app = new cdk.App();
 new TodoAppStack(app, 'TodoAppStack', {
@@ -18,3 +19,5 @@ new TodoAppStack(app, 'TodoAppStack', {
 
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
+
+new PipelineStack(app, 'TodoAppPipelineStack');
